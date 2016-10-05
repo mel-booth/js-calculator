@@ -16,18 +16,19 @@ $(document).ready(function(){
   var nums = [0,1,2,3,4,5,6,7,8,9];
 
   function getValue(input){
-    totalString = inputs.join("");
-    $
+
 
   }
 
   function updateValue(){
 
 
+
   }
 
   function getTotal(){
-
+    totalString = inputs.join("");
+    $("#output").html(eval(totalString));
 
   }
 });
