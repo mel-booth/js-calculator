@@ -21,7 +21,8 @@ $(document).ready(function(){
   }
 
   function updateValue(){
-
+    totalString = inputs.join("");
+    $("#output").html(totalString);
 
 
   }
