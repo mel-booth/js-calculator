@@ -1,12 +1,16 @@
 h3 {
   font-family: 'Ubuntu', sans-serif;
+  text-align: center;
 }
 
 h6 {
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
-#row
+#row {
+  
+}
 
 
 #calculator-output
