@@ -42,6 +42,15 @@ $(document).ready(function(){
     else if (this.id==="total"){
       getTotal();
     }
+    else {
+      if(inputs[inputs.length-1].indexOf("+", "-", "/", "*", "-1")===-1){
+        getValue(this.id);
+      }
+      else{
+        getValue(this.id);
+
+      }
+    }
 
 
   });
