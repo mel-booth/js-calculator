@@ -32,4 +32,17 @@ $(document).ready(function(){
     $("#output").html(eval(totalString));
 
   }
+
+  $("button").on("click", function(){
+
+    if(this.id==="clear"){
+      inputs=[""];
+      updateValue();
+    }
+    else if (this.id==="total"){
+      getTotal();
+    }
+
+
+  });
 });
