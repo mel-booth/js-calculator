@@ -12,20 +12,13 @@ h3 {
 }
 
 h6 {
+  color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
-.container {
-
-}
-
-.row {
-  padding: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-
-
+a {
+  text-decoration: none;
 }
 
 #calculator {
@@ -70,6 +63,11 @@ align-content: center;
   background-color: #ff0000;
 }
 
+.row {
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 .num {
   height: 50px;
@@ -79,6 +77,7 @@ align-content: center;
   margin-top: 5px;
   margin-bottom: 5px;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
   color: #ffffff;
   background-color: #0000ff;
 }
@@ -91,6 +90,7 @@ align-content: center;
   margin-top: 5px;
   margin-bottom: 5px;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
   color: #000000;
   background-color: #ffff00;
 }
