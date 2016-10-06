@@ -60,6 +60,7 @@ $(document).ready(function(){
       getTotal();
     }
     else {
+      //If last input in array does not contain index of operators, get the value
       if(inputs[inputs.length-1].indexOf("+", "-", "/", "*", ".")===-1){
         getValue(this.id);
       }
