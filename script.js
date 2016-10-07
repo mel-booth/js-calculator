@@ -17,36 +17,30 @@ $(document).ready(function(){
 
   //Adds value to the inputs array
   function getValue(input){
-    //Displays error message if you try and use two decimals (.) in a row
-    if(operators2.includes(inputs[inputs.length-1]===true && input===".")){
-      console.log("Duplicate '.'");
-    }
+
     //To make sure you can't input an operator from operators1 array before a number
-    else if(inputs.length===1 && operators1.includes(input)===false){
+    if(inputs.length===1 && operators1.includes(input)===false){
       inputs.push(input);
     }
     //Adds an operator to the output only if last character input was not an operator
     else if(operators1.includes(inputs[inputs.length-1])===false){
       inputs.push(input);
     }
-    //So you can add multiple numbers to the output
+    //Lets you input multiple numbers to the output
     else if(nums.includes(Number(input))){
       inputs.push(input);
     }
     updateValue();
-
   }
 
   function updateValue(){
     totalString = inputs.join("");
     $("#output").html(totalString);
-
   }
 
   function getTotal(){
     totalString = inputs.join("");
     $("#output").html(eval(totalString));
-
   }
 
   $("button").on("click", function(){
@@ -66,10 +60,7 @@ $(document).ready(function(){
       }
       else{
         getValue(this.id);
-
       }
     }
-
-
   });
 });
